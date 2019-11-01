@@ -6,8 +6,9 @@ if (!require("genefu")) {
   BiocManager::install("genefu", ask =FALSE)
   library("genefu")
 }
-library(genefu) ;library(xtable) ; library(rmeta) ; library(Biobase) ; library(caret)
-library("breastCancerMAINZ")
+library(genefu) ;library(xtable) ; library(rmeta) ; library(Biobase) ; library(caret) ; library("breastCancerMAINZ")
+library(breastCancerMAINZ); library(breastCancerTRANSBIG) ; library(breastCancerUPP);library(breastCancerUNT) ; library(breastCancerNKI)
+
 
 data(breastCancerData)
 cinfo <- colnames(pData(mainz7g))
@@ -17,13 +18,5 @@ idtoremove.all <- NULL
 duplres <- NULL
 
 
-library
-(breastCancerMAINZ)
-library
-(breastCancerTRANSBIG)
-library
-(breastCancerUPP)
-library
-(breastCancerUNT)
-library
-(breastCancerNKI
+# https://bioconductor.org/packages/release/bioc/vignettes/genefu/inst/doc/genefu.pdf
+
